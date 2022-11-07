@@ -12,7 +12,7 @@ if args.threshold > 0.1 or args.threshold < 0.0001:
     print("Please use threshold between 0.0001 and 0.1")
     exit()
 
-model = tf.keras.models.load_model('demo.h5', compile=False)
+model = tf.keras.models.load_model('model_reduced_e20_full.h5', compile=False)
 test_titles = ['chocolate cake', 'chocolate brownies', 'chicken noodle soup', 'mac and cheese', 'chicken diable']
 thresh = args.threshold
 
